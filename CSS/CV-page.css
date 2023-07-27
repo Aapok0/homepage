@@ -1,0 +1,539 @@
+/* I Want to work more towards creating set classes and stylesheets on separate files instead of writing css code specifically for every html page, section, div etc. */
+
+/* SITEWIDE */
+
+/* Reses all margins and paddings and chooses font for site. */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Dynamic site-covering background image */
+html{ 
+    background: url(../pictures/background2.jpg) no-repeat center bottom fixed; 
+    background-size: cover;
+  }
+
+  /* Dynamic main box */
+.box{
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 36%);
+    text-align: center;
+    background: url(../pictures/mountain.png) no-repeat center 15% fixed;
+    background-size: cover;
+    background-position: 81.5% 23%;
+    background-attachment: scroll;
+}
+
+/* Makes the background color and image opaque. */
+.box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Larger box, but in the same position with respect to the left corner. */
+.box-large{
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 1075px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, 24%);
+    text-align: center;
+    background: url(../pictures/mountain.png) no-repeat center 15% fixed;
+    background-size: cover;
+    background-position: 81.5% 23%;
+    background-attachment: scroll;
+}
+
+/* Makes the background color and image opaque. */
+.box-large::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Navigation, always on the left side of main box with little separation. */
+.navigation{
+    width: 175px;
+    position: fixed;
+    top: 0;
+    left: -205px;
+    float: left;
+}
+
+/* Navigation buttons with hover and active effects. */
+a.nav-items{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    width: 175px;
+    margin: 0 5px 10px 5px;
+    padding: 8px;
+    background-image: linear-gradient(to right, rgb(120, 170, 125), rgba(120, 170, 125, 0.8), rgba(120, 170, 125, 0.50), rgba(120, 170, 125, 0.33), rgba(120, 170, 125, 0));
+}
+
+a.nav-items:hover{
+    background-color: rgba(0, 0, 0, 0.7);;
+    color: white;
+}
+
+a.nav-items:active{
+    background-color: rgba(0, 0, 0, 0.7);;
+    color: blue;
+}
+
+/* GENERAL STYLES */
+
+h1, h2, ul{
+    margin-bottom: 5px;
+}
+
+h3{
+    margin-bottom: 2px;
+}
+
+/* UTILITIES */
+
+.highlight{
+    color: rgb(120, 170, 125);
+}
+
+.nobullets{
+    list-style-type: none;
+}
+
+.gap{
+    margin-top: 50px;
+}
+
+/* HOME */
+
+/* Round profile image */
+img.self{
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%);
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+div.headlines{
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+}
+
+article.infotext{
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    color: white;
+}
+
+/* Contact box */
+div.contact{
+    display: block;
+    text-align: center;
+    width: 80%;
+    background-color: rgb(120, 170, 125);
+    position: absolute;
+    top: 72.5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Box for socials */
+section.socials{
+    display: block;
+    position: relative;
+    top: 86.5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 33%;
+    height: 50px;
+}
+
+/* Socials buttons centered and spaced evenly with hover effect */
+a.face{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url(../pictures/facebook-white.png) no-repeat;
+    background-size: cover;
+}
+
+a.face:hover{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url(../pictures/facebook.png) no-repeat;
+    background-size: cover;
+}
+
+a.link{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50px;
+    height: 50px;
+    background: url(../pictures/linkedin-white.png) no-repeat;
+    background-size: cover;
+}
+
+a.link:hover{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50px;
+    height: 50px;
+    background: url(../pictures/linkedin.png) no-repeat;
+    background-size: cover;
+}
+
+a.insta{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: url(../pictures/instagram-white.png) no-repeat;
+    background-size: cover;
+}
+
+a.insta:hover{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: url(../pictures/instagram.png) no-repeat;
+    background-size: cover;
+}
+
+/* RESUME */
+
+/* Article box, that prevents the text from being opaque. */
+article.large{
+    display: block;
+    position: absolute;
+    text-align: left;
+    color: white;
+    /* column-count: 400px 2;
+    column-gap: 50px;
+    column-span: all; */
+}
+
+/* Spaces out the sections. */
+.resume{
+    margin: 50px 50px 0 50px;
+}
+
+/* SKILLS */
+
+/* Spaces out the sections. */
+.skills{
+    margin: 50px 50px 0 50px;
+}
+
+/* Progress bar container */
+.container{
+    display: block;
+    position: relative;
+    width: 600px;
+    height: 18px;
+    background-color: grey;
+}
+
+/* Progress levels in all the different skills */
+.progress-py{
+    display: block;
+    position: absolute;
+    width: 65%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-c{
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-js{
+    display: block;
+    position: absolute;
+    width: 15%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-fe{
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-be{
+    display: block;
+    position: absolute;
+    width: 30%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-mat{
+    display: block;
+    position: absolute;
+    width: 25%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-off{
+    display: block;
+    position: absolute;
+    width: 85%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-bio{
+    display: block;
+    position: absolute;
+    width: 55%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-circ{
+    display: block;
+    position: absolute;
+    width: 55%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-sign{
+    display: block;
+    position: absolute;
+    width: 45%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-math{
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-doc{
+    display: block;
+    position: absolute;
+    width: 75%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-team{
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+.progress-kilta{
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 18px;
+    background-color: rgb(120, 170, 125);
+    text-align: right;
+}
+
+/* INTERESTS */
+
+/* Positions images to look like a loose stack of photos. */
+.gaming{
+    position: absolute;
+    top: -5%;
+    left: -2%;
+    width: 500px;
+    height: auto;
+    transform: rotate(-15deg);
+}
+
+.hiking{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(9deg) ;
+    width: 400px;
+    height: auto;
+    z-index: 8;
+}
+
+.cooking{
+    position: absolute;
+    top: -7%;
+    right: -3%;
+    width: 350px;
+    height: auto;
+    transform: rotate(18deg);
+}
+
+.baking{
+    position: absolute;
+    top: 32%;
+    right: -9%;
+    width: 400px;
+    height: auto;
+    transform: rotate(8deg);
+}
+
+.bass{
+    position: absolute;
+    bottom: -2%;
+    left: -8%;
+    width: 400px;
+    height: auto;
+    transform: rotate(13deg);
+}
+
+.workout{
+    position: absolute;
+    bottom: -6%;
+    right: -3%;
+    width: 450px;
+    height: auto;
+    transform: rotate(-23deg);
+}
+
+.boxing{
+    position: absolute;
+    bottom: 1%;
+    right: 32%;
+    width: 300px;
+    height: auto;
+    transform: rotate(21deg);
+}
+
+.fermentation{
+    position: absolute;
+    top: 23%;
+    right: 18%;
+    width: 250px;
+    height: auto;
+    transform: rotate(-4deg);
+    z-index: 7;
+}
+
+.concerts{
+    position: absolute;
+    bottom: 29%;
+    left: -1%;
+    width: 350px;
+    height: auto;
+    transform: rotate(-6deg);
+}
+
+.pizza{
+    position: absolute;
+    top: -2%;
+    right: 23%;
+    width: 250px;
+    height: auto;
+    transform: rotate(-8deg);
+}
+
+.books{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 320px;
+    height: auto;
+    transform: rotate(-3deg);
+}
+
+.horror{
+    position: absolute;
+    top: 18%;
+    left: 2%;
+    width: 450px;
+    height: auto;
+    transform: rotate(-6deg);
+}
+
+/* REFERENCES */
+
+/* Article box, that prevents the text from being opaque. */
+.references{
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
