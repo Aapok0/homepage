@@ -184,25 +184,25 @@ section.socials{
 }
 
 /* Socials buttons centered and spaced evenly with hover effect */
-a.face{
+a.git{
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 50px;
     height: 50px;
-    background: url(../pictures/facebook-white.png) no-repeat;
+    background: url(../pictures/github-white.png) no-repeat;
     background-size: cover;
 }
 
-a.face:hover{
+a.git:hover{
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 50px;
     height: 50px;
-    background: url(../pictures/facebook.png) no-repeat;
+    background: url(../pictures/github.png) no-repeat;
     background-size: cover;
 }
 

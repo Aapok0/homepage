@@ -44,7 +44,7 @@
             </div>
 
             <section class="socials">
-                <a class="face" href="https://www.facebook.com/aapo.kokko/"></a>
+                <a class="git" href="https://github.com/Aapok0"></a>
                 <a class="link" href="https://www.linkedin.com/in/aapokokko/"></a>
                 <a class="insta" href="https://www.instagram.com/apezo_/"></a>
             </section>
