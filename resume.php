@@ -22,6 +22,7 @@
                     <li class="nav-items"><a class="nav-items" href="skills.php">SKILLS</a></li>
                     <li class="nav-items"><a class="nav-items" href="interests.php">INTERESTS</a></li>
                     <li class="nav-items"><a class="nav-items" href="references.php">REFERENCES</a></li>
+                    <li class="nav-items"><a class="nav-items" href="v2/index.php">HOME-VERSION 2</a></li>
                 </ul>
             </nav>
             <!-- Article for the large box -->
