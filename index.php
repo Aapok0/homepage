@@ -35,7 +35,7 @@
 
             <article class="infotext">
                 <p>
-                    Aalto University and Metropolia graduate experienced in organization work, documentation and DevOps with studies in multiple fields. Certified in Github services and currently learning Full Stack development. test
+                    Aalto University and Metropolia graduate experienced in organization work, documentation and DevOps with studies in multiple fields. Certified in Github services and currently learning Full Stack development.
                 </p>
             </article>
 
