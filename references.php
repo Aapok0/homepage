@@ -17,12 +17,11 @@
         <div class="box">
             <nav class="navigation">
                 <ul class="nobullets">
-                    <li class="nav-items"><a class="nav-items" href="https://aapokokko.fi/">HOME</a></li>
+                    <li class="nav-items"><a class="nav-items" href="https://aapokokko.fi/v1/">HOME</a></li>
                     <li class="nav-items"><a class="nav-items" href="resume.php">RESUME</a></li>
                     <li class="nav-items"><a class="nav-items" href="skills.php">SKILLS</a></li>
-                    <li class="nav-items"><a class="nav-items" href="interests.php">INTERESTS</a></li>
                     <li class="nav-items"><a class="nav-items" href="references.php">REFERENCES</a></li>
-                    <li class="nav-items"><a class="nav-items" href="v2/index.php">HOME V2</a></li>
+                    <li class="nav-items"><a class="nav-items" href="../index.php">HOME V2</a></li>
                 </ul>
             </nav>
 
