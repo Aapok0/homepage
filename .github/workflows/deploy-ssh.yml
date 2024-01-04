@@ -2,7 +2,7 @@ name: Deploy homepage with SSH
 
 on:
   push:
-    branches: [main]
+    branches: [invalid]
 
 permissions:
   contents: read
