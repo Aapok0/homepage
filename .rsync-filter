@@ -1,4 +1,3 @@
-- /.git
-- /.github
-- /.rsync-filter
-- /README.md
+- .git*
+- .rsync-filter
+- README.md
