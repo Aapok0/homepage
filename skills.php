@@ -17,14 +17,18 @@
         <div class="box-large">
             <nav class="navigation">
                 <ul class="nobullets">
-                    <li class="nav-items"><a class="nav-items" href="https://aapokokko.fi/v1/">HOME</a></li>
+<?php
+                    echo '<li class="nav-items"><a class="nav-items" href="https://' . $_SERVER['HTTP_HOST']  . '/v1/">HOME</a></li>';
+?>
                     <li class="nav-items"><a class="nav-items" href="resume.php">RESUME</a></li>
                     <li class="nav-items"><a class="nav-items" href="skills.php">SKILLS</a></li>
                     <li class="nav-items"><a class="nav-items" href="references.php">REFERENCES</a></li>
-                    <li class="nav-items"><a class="nav-items" href="../index.php">HOME V2</a></li>
+<?php
+                    echo '<li class="nav-items"><a class="nav-items" href="https://' . $_SERVER['HTTP_HOST']  . '/v2/">HOME V2</a></li>';
+?>
                 </ul>
             </nav>
-            
+
             <!-- Article for the large box -->
             <article class="large">
                 <section class="skills">
