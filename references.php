@@ -39,7 +39,7 @@
                         <li>Email: juha.havukumpu@metropolia.fi</li>
                     </ul>
                 </section>
-              
+
                 <section class="gap">
                     <h2 class="highlight">Thales DIS Finland Oy (ex-Gemalto)</h2>
                     <h3>Eduardo Hofmann</h3>
