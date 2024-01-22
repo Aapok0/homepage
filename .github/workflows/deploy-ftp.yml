@@ -2,7 +2,7 @@ name: Deploy homepage with ftp
 
 on:
   push:
-    branches: [invalid]
+    branches: [webhotel]
 
 permissions:
   contents: read

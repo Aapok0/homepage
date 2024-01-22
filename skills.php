@@ -24,7 +24,7 @@
                     <li class="nav-items"><a class="nav-items" href="../index.php">HOME V2</a></li>
                 </ul>
             </nav>
-            
+
             <!-- Article for the large box -->
             <article class="large">
                 <section class="skills">

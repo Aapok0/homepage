@@ -44,12 +44,12 @@
 
                 <section class="resume">
                     <h2 class="highlight">Work experience</h2>
-                  	<h3>Trainee Consultant</h3>
+                    <h3>Trainee Consultant</h3>
                     <ul class="nobullets">
                         <li>Metropolia University of Applied Sciences</li>
                         <li>11.2022 - </li>
                     </ul>
-                  	<h3>Student assistant</h3>
+                    <h3>Student assistant</h3>
                     <ul class="nobullets">
                         <li>Metropolia University of Applied Sciences</li>
                         <li>9.2021 - 12.2021</li>
